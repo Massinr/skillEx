@@ -140,6 +140,10 @@ body{
     display: grid;
     position: absolute;
     width: 500px;
+    top: 100px;
+    left: 38%;
+    z-index: 2;
+    opacity: 0;
 }
 
 .add-menu h2 {
@@ -160,7 +164,7 @@ body{
 .form-group input[type="text"],
 .form-group input[type="file"],
 .form-group textarea {
-    width: 100%;
+    width: 94%;
     padding: 15px; /* Increased padding for better spacing */
     border: none;
     border-radius: 6px;
@@ -168,6 +172,7 @@ body{
     background-color: #34495e;
     color: #fff;
     transition: background-color 0.3s ease;
+    resize: none;
 }
 
 .form-group input[type="text"]:focus,
@@ -177,7 +182,35 @@ body{
     background-color: #2c3e50;
 }
 
-button[type="submit"] {
+textarea {
+    border: 1px solid #34495e; /* Border color */
+    background-color: #2c3e50; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    overflow-y: auto; /* Show scrollbar only when needed */
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #3f5870; /* Thumb color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #34485a; /* Thumb color on hover */
+}
+
+
+#Submit {
     width: 100%;
     padding: 15px; /* Increased padding for better spacing */
     background-color: #3498db;
@@ -189,7 +222,7 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+#Submit:hover {
     background-color: #2980b9;
 }
 input[type="file"] {
