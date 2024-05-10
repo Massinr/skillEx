@@ -5,10 +5,10 @@
     transition: all 0.4s ease-in-out;
     font-family: 'Montserrat', sans-serif;
 }
-
+/* 
 body{
     overflow: hidden;
-}
+} */
 .container{
     height: 100vh;
     width: 100vw;
@@ -128,4 +128,82 @@ body{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+.add-menu {
+    max-width: 500px; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 8px;
+    background-color: #2c3e50;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: grid;
+    position: absolute;
+    width: 500px;
+}
+
+.add-menu h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.form-group {
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for better spacing */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #34495e;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="file"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    background-color: #2c3e50;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px; /* Increased padding for better spacing */
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: #eee; /* Change background color on hover */
+    color: #333;
 }
